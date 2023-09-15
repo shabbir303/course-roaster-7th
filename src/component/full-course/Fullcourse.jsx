@@ -5,7 +5,7 @@ import { useState } from "react";
 import Course from "./course/course";
 
 
-const Fullcourse = ({handleDetail}) => {
+const Fullcourse = ({handleDetail, handletime, handleTotal}) => {
     const [fullcourse, setFullcourse] = useState([]);
     useEffect(()=>{
         fetch('course.json')
@@ -19,6 +19,8 @@ const Fullcourse = ({handleDetail}) => {
             {
                 fullcourse.map(singleCourse=> <Course course={singleCourse}
                 handleDetail={handleDetail}
+                handletime={handletime}
+                handleTotal={handleTotal}
                 ></Course>)
             }
             </div>

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 
-const Course = ({course, handleDetail}) => {
+const Course = ({course, handleDetail, handletime, handleTotal}) => {
     const {image, title, description, price,credit_hour }=course;
     
     return (
@@ -19,7 +19,9 @@ const Course = ({course, handleDetail}) => {
             <h1>Credit : {credit_hour}hr </h1>
             </div>
             </div>
-            <button onClick={()=> handleDetail(course)} className=" w-[90%] mx-auto  bg-[#2F80ED] flex justify-center items-center py-[5px] my-[15px] rounded-lg text-white text-[18px] font-[500] " >Select</button>
+            <button onClick={()=> {handleDetail(course);
+             handletime(credit_hour) ; handleTotal(price)
+           } } className=" w-[90%] mx-auto  bg-[#2F80ED] flex justify-center items-center py-[5px] my-[15px] rounded-lg text-white text-[18px] font-[500] " >Select</button>
         </div>
     );
 };
