@@ -10,8 +10,10 @@ function App() {
   return (
     <>
       <Header></Header>
-      <Fullcourse></Fullcourse>
+     <div className='md:flex'>
+     <Fullcourse></Fullcourse>
       <Details></Details>
+     </div>
     </>
   )
 }
