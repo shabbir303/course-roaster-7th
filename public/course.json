@@ -1,0 +1,63 @@
+[{
+    "image": "https://i.ibb.co/SX7sVPB/Rectangle-2-2.png",
+    "title": "Introduction to C Programming",
+    "description": "Learn the fundamentals of C programming, including variables, data types, and control structures.",
+    "price": 49.99,
+    "credit_hour": 3
+  },
+  {
+    "image": "https://i.ibb.co/N3KJCpq/Rectangle-2-3.png",
+    "title": "Introduction to Algorithms",
+    "description": "Learn the fundamentals of C programming, including variables, data types, and control structures.",
+    "price": 49.99,
+    "credit_hour": 3
+  },
+  {
+    "image": "https://i.ibb.co/gPHd7hP/Rectangle-2-4.png",
+    "title": "Introduction to C++ for DSA",
+    "description": "Learn the fundamentals of C programming, including variables, data types, and control structures.",
+    "price": 49.99,
+    "credit_hour": 3
+  },
+  {
+    "image": "https://i.ibb.co/BgLdVQr/Rectangle-3.png",
+    "title": "Basic Data Structures",
+    "description": "Learn the fundamentals of C programming, including variables, data types, and control structures.",
+    "price": 49.99,
+    "credit_hour": 3
+  },
+  {
+    "image": "https://i.ibb.co/XZNCwCJ/Rectangle-2.png",
+    "title": "Introduction to OOP Python",
+    "description": "Learn the fundamentals of C programming, including variables, data types, and control structures.",
+    "price": "49.99",
+    "credit_hour": 3
+  },
+  {
+    "image": "https://i.ibb.co/YjfdCP2/Rectangle-2-5.png",
+    "title": "Software Engineering",
+    "description": "Learn the fundamentals of C programming, including variables, data types, and control structures.",
+    "price": "49.99",
+    "credit_hour": 3
+  },
+  {
+    "image": "https://i.ibb.co/1fbzvHz/Rectangle-3-1.png",
+    "title": "AWS, Cloud Computing",
+    "description": "Learn the fundamentals of C programming, including variables, data types, and control structures.",
+    "price": 49.99,
+    "credit_hour": 3
+  },
+  {
+    "image": "https://i.ibb.co/cTCCDBw/Rectangle-2-1.png",
+    "title": "Database (MySQL)",
+    "description": "Learn the fundamentals of C programming, including variables, data types, and control structures.",
+    "price": 49.99,
+    "credit_hour": 3
+  },
+  {
+    "image": "https://i.ibb.co/dmXs7CT/Rectangle-2-6.png",
+    "title": "Problem-Solving Part",
+    "description": "Learn the fundamentals of C programming, including variables, data types, and control structures.",
+    "price": 49.99,
+    "credit_hour": 3
+  }]
