@@ -6,6 +6,9 @@ import Details from './component/Details/Details'
 import Header from './component/Header/Header'
 import Fullcourse from './component/full-course/Fullcourse'
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   const [details, SetDetails] = useState([]);
   const [remainningCredit, setReamainningCredit] = useState(20)
@@ -29,6 +32,14 @@ function App() {
     const newAddCredit = addCredit + time;
     setAddCredit(newAddCredit);
     setReamainningCredit(remainningTime);
+
+    if(newAddCredit<=20){
+      setAddCredit(newAddCredit)
+    }else if(newAddCredit > 20){
+      toast("Your credit score exceed")
+      setAddCredit(20);
+      setReamainningCredit(0);
+    }
   }
   return (
     <>
@@ -37,6 +48,7 @@ function App() {
      <Fullcourse handleDetail={handleDetail} handletime={handletime} handleTotal={handleTotal} ></Fullcourse>
       <Details details={details} remainningCredit= {remainningCredit} addCredit={addCredit} totalPrice={totalPrice}></Details>
      </div>
+     <ToastContainer/>
     </>
   )
 }
