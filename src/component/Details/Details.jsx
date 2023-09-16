@@ -11,7 +11,7 @@ const Details = ({details, remainningCredit, addCredit, totalPrice}) => {
             <h1 className="text-[20px] font-[700] text-black mb-[21px] mt-[14px] ">Course Name</h1>
            <div className="mb-[20px] " >
            {
-                details.map(singleDetail =><Detail detail={singleDetail}></Detail>)
+                details?.map((singleDetail, index) =><Detail key={singleDetail.id} detail={singleDetail} i={index}></Detail>)
             }
            </div>
            <hr  className="border-t-1 border-[#1C1B1B33]" />

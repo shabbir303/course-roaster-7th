@@ -18,7 +18,6 @@ const Course = ({course, handleDetail, handletime, handleTotal}) => {
         handleTotal(price)
         return
       }else{
-        setClick(false);
         toast("double clicked");
       }
     }

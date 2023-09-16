@@ -15,7 +15,7 @@ function App() {
   const [addCredit, setAddCredit] = useState(0);
   const [totalPrice, setTotalPrice] = useState(0);
 
-  
+  // console.log(details);
 
   const handleDetail = detail=>{
     // console.log(detail)
@@ -35,17 +35,21 @@ function App() {
 
     if(newAddCredit<=20){
       setAddCredit(newAddCredit)
+      
     }else if(newAddCredit > 20){
-      toast("Your credit score exceed")
+      toast("Your Credit Hour exceed")
       setAddCredit(20);
       setReamainningCredit(0);
+      
+      SetDetails(details);
+      // return
     }
   }
   return (
     <>
       <Header></Header>
      <div className='md:flex'>
-     <Fullcourse handleDetail={handleDetail} handletime={handletime} handleTotal={handleTotal} ></Fullcourse>
+     <Fullcourse  handleDetail={handleDetail} handletime={handletime} handleTotal={handleTotal} ></Fullcourse>
       <Details details={details} remainningCredit= {remainningCredit} addCredit={addCredit} totalPrice={totalPrice}></Details>
      </div>
      <ToastContainer/>

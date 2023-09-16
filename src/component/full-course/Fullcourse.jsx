@@ -21,6 +21,7 @@ const Fullcourse = ({handleDetail, handletime, handleTotal}) => {
                 handleDetail={handleDetail}
                 handletime={handletime}
                 handleTotal={handleTotal}
+               
                 ></Course>)
             }
             </div>
